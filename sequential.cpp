@@ -121,13 +121,13 @@ int main()
     LU_Decomposition(A, L, U);
     clock_t endTime =  clock();   // ending the clock time
     
-    cout<<"\nMatrix L : \n"<<endl;
+    cout<<"\nLower triangular matrix (L Matrix) : \n"<<endl;
     print_matrix(L);
 
-    cout<<"\nMatrix U : \n"<<endl;
+    cout<<"\nUpper triangular matrix (U Matrix) : \n"<<endl;
     print_matrix(U);
 
     runtime = (double)(endTime-startTime)/(double)CLOCKS_PER_SEC;
-    cout <<"\nTime elapsed : "<<runtime<<" seconds\n"<<endl;
+    // cout <<"\nTime elapsed : "<<runtime<<" seconds\n"<<endl;
 	return 0;
 }
